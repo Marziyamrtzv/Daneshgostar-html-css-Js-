@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> احادیث  </title>
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	</head>
+
+	<body>
+    	<section id="hadis">
+			<img src="pic/hadis.png" >
+        </section>
+    	
+        <div id="sidenav">
+          <nav>
+          	<ul>
+				<li> <a  href="index.html"> صفحه اصلی </a></li>
+
+                <li> <a href="articles.html"> صفحه مقالات </a></li>
+				
+                <li> <a href="aboutus.html"> درباره ما </a></li>
+				
+             </ul>   
+          </nav>
+        </div>
+        
+        <div id="menubtn">
+        	<img src="pic/menu.png" id="menu">
+        </div>
+
+		
+		<script>
+        	var menubtn = document.getElementById("menubtn")
+			var menu = document.getElementById("menu")
+			var sidenav = document.getElementById("sidenav")
+
+			sidenav.style.right = "-200px"
+			menubtn.onclick= function(){
+				if(sidenav.style.right == "-200px"){
+					sidenav.style.right="0"
+					menu.src= "pic/close.png ";
+					}
+					else{
+					sidenav.style.right="-200px"
+					menu.src= "pic/menu.png ";	
+						}
+				}
+
+				var scroll = new SmoothScroll('a[href*="#"]',{
+					speed:1000,
+					speedAsDuration: true
+				});
+				
+		
+        </script>
+       
+		
+        
+	</body>
+    
+</html>

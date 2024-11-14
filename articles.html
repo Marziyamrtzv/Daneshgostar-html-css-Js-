@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> مقالات دانش گستر</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css">
+		<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	</head>
+
+	<body>
+    	<section id="articlepage">
+        </section>
+    	
+        <div id="sidenav">
+          <nav>
+          	<ul>
+				<li> <a  href="index.html"> صفحه اصلی </a></li>
+
+                <li> <a href="articles.html"> صفحه مقالات </a></li>
+				
+                <li> <a href="aboutus.html"> درباره ما </a></li>
+				
+             </ul>   
+          </nav>
+        </div>
+        
+        <div id="menubtn">
+        	<img src="pic/menu.png" id="menu">
+        </div>
+
+		
+
+	<!--services-->
+
+	<section id="intro">
+		<div class="title-text">
+				<p> لیست مقالات</p>
+				<h1></h1>
+			</div>
+
+			<div class="service-box">
+				
+				
+				<div class="single-service" onclick="location.href='time.html';" style= "cursor: pointer;">
+					
+					<img src="pic/clock.jpg" >
+				
+					<div class="overlay">
+					</div>
+					<div class="service-desk">
+						<h1> مقاله۱: بهترین وقت مطالعه</h1>
+						<hr>
+						<p></p>
+
+					</div>
+				
+				</div>
+
+
+
+
+				<div class="single-service" onclick="location.href='howtostudy.html';" style= "cursor: pointer;">
+					<img src="pic/study.jpg">
+					<div class="overlay">	
+					</div>
+					<div class="service-desk">
+						<h1> مقاله ۲: چگونه درس بخوانیم؟ </h1>
+						<hr>
+						<p></p>
+
+					</div>
+				</div>
+
+
+
+
+				<div class="single-service" onclick="location.href='foods.html';" style= "cursor: pointer;">
+					<img src="pic/foodbanner3.jpeg">
+					<div class="overlay">
+					</div>
+					<div class="service-desk">
+						<h1> مقاله ۳: معرفی خوراکی هلی مفید برای مغز</h1>
+						<hr>
+						<p></p>
+
+					</div>
+				</div>
+
+
+				<div class="single-service" onclick="location.href='brain.html';" style= "cursor: pointer;">
+					<img src="pic/brain6.png">
+					<div class="overlay">
+					</div>
+					<div class="service-desk">
+						<h1> مقاله ۴: چگونه حافظه ی خود را تقویت کنیم؟</h1>
+						<hr>
+						<p></p>
+
+					</div>
+				</div>
+
+
+				<div class="single-service" onclick="location.href='book.html';" style= "cursor: pointer;">
+					<img src="pic/bookbanner.jpg">
+					<div class="overlay">
+					</div>
+					<div class="service-desk">
+						<h1> مقاله ۵:معرفی ۳ کتاب در زمینه برنامه ریزی و بهبود عملکرد مغز</h1>
+						<hr>
+						<p></p>
+
+					</div>
+				</div>
+
+
+				<div class="single-service" onclick="location.href='hadis.html';" style= "cursor: pointer;">
+					<img src="pic/hadis.jpg">
+					<div class="overlay">
+					</div>
+					<div class="service-desk">
+						<h1> مقاله ۶: احادیثی زیبا در مورد علم و دانش</h1>
+						<hr>
+						<p></p>
+
+					</div>
+				</div>
+
+
+
+			</div>
+
+	</section>
+
+	
+
+	<!--footer-->
+	<footer id="footer">
+		<img src="pic/footer.png">
+</footer>
+
+
+
+        
+        <script>
+        	var menubtn = document.getElementById("menubtn")
+			var menu = document.getElementById("menu")
+			var sidenav = document.getElementById("sidenav")
+
+			sidenav.style.right = "-200px"
+			menubtn.onclick= function(){
+				if(sidenav.style.right == "-200px"){
+					sidenav.style.right="0"
+					menu.src= "pic/close.png ";
+					}
+					else{
+					sidenav.style.right="-200px"
+					menu.src= "pic/menu.png ";	
+						}
+				}
+
+				var scroll = new SmoothScroll('a[href*="#"]',{
+					speed:1000,
+					speedAsDuration: true
+				});
+				
+		
+        </script>
+		
+        
+	</body>
+    
+</html>
